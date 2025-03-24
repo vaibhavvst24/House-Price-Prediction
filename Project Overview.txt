@@ -1,0 +1,47 @@
+✅ Points to Remember for Interview
+📌 1. What is this project about?
+"This is a House Price Prediction project where the goal is to predict house prices based on features like location, income, population, and proximity to the ocean. It uses the famous California Housing dataset."
+
+📌 2. What was the biggest challenge?
+"The data had missing values, and the ocean_proximity column was categorical, so I had to handle both before modeling. Also, house prices have non-linear relationships with features like income, so simple models like Linear Regression performed poorly."
+
+📌 3. Why did you choose Random Forest?
+"Random Forest works well when relationships are complex and non-linear. After comparing with Linear Regression, Random Forest gave much better accuracy (R² increased from 0.63 to 0.80)."
+
+📌 4. What techniques did you use for better model performance?
+Handled missing data (dropped rows with missing values)
+Encoded categorical features (ocean_proximity using One-Hot Encoding)
+Tried Hyperparameter Tuning for Random Forest (changing depth, estimators, etc.)
+Used Train-Test Split properly (80-20 split)
+
+📌 5. What metrics did you use to evaluate?
+Mean Squared Error (MSE): To see average squared error
+Root Mean Squared Error (RMSE): To interpret error in actual dollars
+Mean Absolute Error (MAE): Average absolute error in prediction
+R² Score: To understand overall model accuracy (closer to 1 is better)
+
+📌 6. What did you learn from EDA (Exploratory Data Analysis)?
+House prices are higher near the coast (NEAR BAY, NEAR OCEAN).
+Higher income areas tend to have higher house prices.
+There’s a strong positive correlation between median income and house price.
+Population density doesn’t directly control house price (weak correlation).
+
+📌 7. What’s the final outcome?
+"My Random Forest model achieved:
+
+Train Accuracy (R²): 0.88
+Test Accuracy (R²): 0.80
+Average prediction error (MAE): around $31,600 per house.
+
+📌 8. Bonus - How would you improve this project further?
+Try more advanced models like XGBoost.
+Use Feature Engineering (combine features like rooms per household, population per household).
+Handle outliers in price or income.
+Perform scaling (especially if trying Linear Regression again).
+Use techniques like Cross-Validation for better performance check.
+
+Pro Tip for Interviews
+
+If asked "Why is your model not perfect?", confidently say:
+
+"In real life, house prices depend on many external factors like nearby schools, crime rate, future development plans — which aren’t in this dataset. That’s why the model can’t capture everything, and that’s normal."
