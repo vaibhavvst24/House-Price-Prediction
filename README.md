@@ -55,9 +55,9 @@ The application ensures proper validation to prevent incorrect inputs and mainta
 🏁 Conclusion
 The Random Forest model demonstrated a high level of accuracy compared to other models like Linear Regression and KNN.
 
-Train Accuracy: Up to 97%
+Train Accuracy: Up to 88%
 
-Test Accuracy: Up to 80%
+Test Accuracy: Up to 81%
 
 The model’s robustness makes it ideal for real-world price prediction.
 
